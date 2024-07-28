@@ -27,6 +27,24 @@ header nav a:hover {
     padding: 20px;
 }
 
+li, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+ul + p {
+    margin-top: 15px;
+}
+
+li + p {
+    margin-top: 5px;
+}
+
+
 footer {
     background-color: #333;
     color: white;
@@ -50,19 +68,3 @@ footer {
     border-radius: 10px;
 }
 
-li, p {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 15px;
-}
-
-ul + p {
-    margin-top: 15px;
-}
-
-li + p {
-    margin-top: 5px;
-}

@@ -14,4 +14,4 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-If there are any problems with the website you can mail me on keano@keanoserver.com
+If there are any problems with the website you can mail me on suport@keanoserver.com

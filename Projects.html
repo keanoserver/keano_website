@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en" data-bss-forced-theme="light">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Projects - keanoserver</title>
-    <link rel="icon" href="assets/img/logo/logo.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png">
+    <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner-CookieBanner.css">
+    <link rel="stylesheet" href="assets/css/Cookie-Banner.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="index.html">keanoserver</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.html">keanoserver</a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -35,18 +46,37 @@
             <ul>
                 <li>1. Own vpn. Time taken: 3 months</li>
                 <li>2. Openvpn on chromebook. Time taken: 10 months</li>
+                <li>3. Own nas. Time taken: 1 month</li>
+                <li>4. Own dashboard. Time taken: 2 weeks</li>
+                <li>5. Making a reverse proxy. Time taken: 3 weeks</li>
+                <li>6. Making a website. Time taken: 2 months</li>
+                <li>7. Own Google Home. Time taken 1 week</li>
+                <li>8. Google home with Home Assistant. Time taken: 2 weeks</li>
+                <li>9. Learning about networking. Time taken: 1 month</li>
+                <li>10. Learning about network security. Time taken: 1 month</li>
+                <li>11. Learning how to secure a network. Time taken: 2 weeks</li>
+                <li>12. Learning how to hack a network for better security. Time taken: 2 months</li>
+                <li>13. Learning about virtual machines. Time taken: 1 week</li>
+                <li>14. Making virtual machines. Time taken: 2 days</li>
+                <li>15. Own DNS server. Time taken: 3 days</li>
             </ul>
-            <h1 class="mt-md-5" style="text-align: left;">Own vpn.</h1>
+            <h1 class="mt-md-5" style="text-align:left;">Own vpn.</h1>
             <p class="mt-md-3 ms-md-2">When I was on my new school I wanted a vpn, because the school wifi blocked many things so I made my first vpn with wireguard. But that uses udp protocol and that is blocked on oure school network so I needed to find a other way to access a vpn. So I installed pivpn where I can configure openvpn so it uses tcp and tcp is not blocked. now i have a vpn for my phone so i cant be blocked by my school.</p>
             <h1 class="mt-md-5">Openvpn on chromebook.</h1>
-            <p class="mt-md-3 ms-md-2">It sounds simple to add a vpn on a chromebook because you can download the openvpn app and import the vpn. But it was not that simple because I wanted the vpn on my school account and that was the difficult thing because i cant install the openvpn app. So I needed to use the build in vpn of my chromebook. So I imported the certificate and it didn't work. Later I tried a other way and that worked. But I'm not gonna tell that now because then my school know how to block it. I will change the website on 01/01/2025.</p>
+            <p class="mt-md-3 ms-md-2">It sounds simple to add a vpn on a chromebook because you can download the openvpn app and import the vpn. But it was not that simple because I wanted the vpn on my school account and that was the difficult thing because i cant install the openvpn app. So I needed to use the build in vpn of my chromebook. So I imported the certificate and it didn't work. Later I tried a other way and that worked. But I'm not gonna tell that now because then my school know how to block it. I will change the website on 01/02/2025.</p>
+            <h1 class="mt-md-5">Own nas.</h1>
+            <p class="mt-md-3 ms-md-2"><span style="color: rgb(0, 0, 0); background-color: transparent;">A nas what is it and what does it do? That is what I thinked. Why do people need a nas? and why is it so useful? A nas stands for network attached storage. The thing that you do with a nas is different between people. You can store files or run virtual machines on them. Or even docker containers. The thing that I did with a nas is just saving files so that I have a back-up for my files of my pc and phone. The program I used for a nas was Truenas Core. It is an easy to run software and it is low weight. Later I decided to switch to Truenas Scale. It is a better version of Truenas core. The main difference is that Truenas core runs on FreeBSD and Truenas Scale on Debian. I used an old laptop for Truenas Scale and Core. They are good software for beginners and it is easy to use.</span></p>
+            <h1 class="mt-md-5">Own dashboard.</h1>
+            <p class="mt-md-3 ms-md-2"><span style="color: rgb(0, 0, 0); background-color: transparent;">A nas what is it and what does it do? That is what I thinked. Why do people need a nas? and why is it so useful? A nas stands for network attached storage. The thing that you do with a nas is different between people. You can store files or run virtual machines on them. Or even docker containers. The thing that I did with a nas is just saving files so that I have a back-up for my files of my pc and phone. The program I used for a nas was Truenas Core. It is an easy to run software and it is low weight. Later I decided to switch to Truenas Scale. It is a better version of Truenas core. The main difference is that Truenas core runs on FreeBSD and Truenas Scale on Debian. I used an old laptop for Truenas Scale and Core. They are good software for beginners and it is easy to use.</span></p>
+            <h1 class="mt-md-5">Making a reverse proxy.</h1>
+            <p class="mt-md-3 ms-md-2"><span style="color: rgb(0, 0, 0); background-color: transparent;">A reverse proxy is not the same as an vpn. With an VPN you are on the network but with a proxy you connect to it but don't get an ip from it. A proxy is good when people want to use your apps but you don’t want them on your network. I use Cloudflare for my proxy. Now people can connect to my network without seeing all my devices. For a reverse proxy you need a connector. The connector is installed on my Raspberry Pi. Now people can access my apps without being on my network.</span></p>
         </section>
     </main>
     <footer class="page-footer dark">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h5>About us</h5>
+                    <h5>About me</h5>
                     <ul>
                         <li></li>
                         <li><a href="about-me.html">About me</a></li>
@@ -62,13 +92,17 @@
                 <div class="col-sm-3">
                     <h5>Legal</h5>
                     <ul>
-                        <li><a href="License.html">License</a>l</li>
+                        <li><a href="License.html">License</a></li>
+                        <li><a href="Privacy%20Policy.html">Privacy Policy</a></li>
+                        <li><a href="Cookie%20Policy.html">Cookie Policy</a></li>
+                        <li><a href="Terms%20and%20Conditions.html">Terms and Cons</a></li>
+                        <li><a href="data%20requests.html">Data Requests</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h5>Socials</h5>
                     <ul>
-                        <li><a href="https://github.com/keanoserver">Github</a>Item 1</li>
+                        <li><a href="https://github.com/keanoserver">Github</a>1</li>
                     </ul>
                 </div>
             </div>
@@ -78,9 +112,12 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/js/baguetteBox.min.js"></script>
+    <script src="assets/js/js/vanilla-zoom.js"></script>
+    <script src="assets/js/js/theme.js"></script>
+    <script src="assets/js/Cookie-Banner-CookieBanner.js"></script>
+    <script src="assets/js/google.js"></script>
 </body>
 
 </html>

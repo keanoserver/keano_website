@@ -5,10 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Projects - keanoserver</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="744x747" href="assets/img/logo/logo.png">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&display=swap">
+
+    <!-- Icon Fonts -->
     <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
     <link rel="stylesheet" href="assets/css/Cookie-Banner.css">
@@ -26,49 +36,52 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="Projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-me.html">About me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <main class="page">
         <section class="clean-block clean-blog-list dark">
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info">Projects</h2>
                 </div>
-                <ul>
-                    <li>1. Own VPN - Time taken: 3 months</li>
-                    <li>2. OpenVPN on Chromebook - Time taken: 10 months</li>
-                    <li>3. Own NAS - Time taken: 1 month</li>
-                    <li>4. Own Dashboard - Time taken: 2 weeks</li>
-                    <li>5. Reverse Proxy - Time taken: 3 weeks</li>
-                </ul>
-
-                <h1 class="mt-md-5">Own VPN</h1>
-                <p class="mt-md-3 ms-md-2">At my new school, I needed a VPN because the school Wi-Fi blocked many sites. I built my first VPN using WireGuard, but it relied on the UDP protocol, which was blocked on our network. To resolve this, I installed PiVPN and configured OpenVPN to use TCP, which wasn’t blocked. Now, I have a functional VPN on my phone that bypasses the restrictions.</p>
-
-                <h1 class="mt-md-5">OpenVPN on Chromebook</h1>
-                <p class="mt-md-3 ms-md-2">Adding a VPN on a Chromebook seemed straightforward—just download the OpenVPN app and import the configuration. However, my school account restricted app installations. I used the built-in VPN feature, imported the certificate, and faced issues. After some trial and error, I found a workaround that I won’t disclose here to prevent the school from blocking it. Check back on 01/02/2025 for updates.</p>
-
-                <h1 class="mt-md-5">Own NAS</h1>
-                <p class="mt-md-3 ms-md-2">A NAS (Network Attached Storage) allows file storage, virtual machine hosting, or running Docker containers. I used it for backing up files from my PC and phone. I started with TrueNAS Core, which is lightweight and user-friendly, and later switched to TrueNAS Scale, which runs on Debian instead of FreeBSD. I repurposed an old laptop for this project, making it an excellent solution for beginners.</p>
-
-                <h1 class="mt-md-5">Own Dashboard</h1>
-                <p class="mt-md-3 ms-md-2">I created a dashboard to manage and monitor my network and services efficiently. This dashboard streamlined how I interact with my projects and systems, consolidating everything in one place for easier access and control.</p>
-
-                <h1 class="mt-md-5">Reverse Proxy</h1>
-                <p class="mt-md-3 ms-md-2">Unlike a VPN, a reverse proxy doesn’t assign an IP address from your network. It allows users to access apps securely without being directly on your network. I used Cloudflare for this, with the connector installed on a Raspberry Pi. This setup ensures that my network remains secure while others access specific apps.</p>
             </div>
+            <ul>
+                <li>1. Own VPN. Time taken: 3 months</li>
+                <li>2. OpenVPN on Chromebook. Time taken: 10 months</li>
+                <li>3. Own NAS. Time taken: 1 month</li>
+                <li>4. Own dashboard. Time taken: 2 weeks</li>
+                <li>5. Making a reverse proxy. Time taken: 3 weeks</li>
+            </ul>
+
+            <!-- Project Details -->
+            <h1 class="mt-md-5">Own VPN</h1>
+            <p class="mt-md-3 ms-md-2">When I was at my new school, I wanted a VPN because the school WiFi blocked many things. I made my first VPN with WireGuard, but since it uses the UDP protocol, which is blocked on our school network, I had to find another way. I installed PiVPN and configured OpenVPN to use TCP, which is not blocked. Now I have a VPN for my phone that bypasses the school's restrictions.</p>
+
+            <h1 class="mt-md-5">OpenVPN on Chromebook</h1>
+            <p class="mt-md-3 ms-md-2">Adding a VPN to a Chromebook sounds simple because you can download the OpenVPN app and import the configuration. However, I wanted the VPN on my school account, where I couldn’t install the app. I had to use the built-in VPN settings on the Chromebook. After importing the certificate and troubleshooting, I found a solution. For security reasons, I’ll update the details of this method on 01/02/2025.</p>
+
+            <h1 class="mt-md-5">Own NAS</h1>
+            <p class="mt-md-3 ms-md-2">A NAS (Network Attached Storage) is a versatile device for storing files, running virtual machines, or hosting Docker containers. I used TrueNAS Core to set up a NAS for backing up files from my PC and phone. Later, I switched to TrueNAS Scale for its better features, as it runs on Debian compared to Core's FreeBSD. I used an old laptop, and both versions are great for beginners due to their ease of use.</p>
+
+            <h1 class="mt-md-5">Own Dashboard</h1>
+            <p class="mt-md-3 ms-md-2">I created a personalized dashboard for monitoring and managing my projects. It integrates various tools and services I use, providing a centralized control panel. This project enhanced my understanding of front-end and back-end development.</p>
+
+            <h1 class="mt-md-5">Making a Reverse Proxy</h1>
+            <p class="mt-md-3 ms-md-2">A reverse proxy allows people to connect to your services without accessing your entire network. I used Cloudflare to set up my reverse proxy. It connects through a Raspberry Pi, ensuring that external users can access my apps securely without seeing all my devices.</p>
         </section>
     </main>
+
     <footer class="page-footer dark">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h5>About Me</h5>
+                    <h5>About me</h5>
                     <ul>
-                        <li><a href="about-me.html">About Me</a></li>
+                        <li><a href="about-me.html">About me</a></li>
                         <li><a href="Projects.html">Projects</a></li>
                     </ul>
                 </div>
@@ -100,12 +113,13 @@
             <p>© 2024-2025 keanoserver.com</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="assets/js/Cookie-Banner-CookieBanner.js"></script>
-    <script src="assets/js/google.js"></script>
+    <script src="assets/js/Cookie-Banner.js"></script>
 </body>
 
 </html>

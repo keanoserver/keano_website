@@ -1,0 +1,54 @@
+/* Base styles for all pages */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: sans-serif; /* Set a default font */
+    background-color: #404040; /* Light background color */
+}
+
+html, body {
+    height: 100%; /* Ensure the body and html take up the full height of the viewport */
+    width: 100%; /* Ensure the body and html take up the full width of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+main {
+    flex: 1; /* Push the footer to the bottom when there is little content */
+}
+
+
+/* Extra styles */
+
+.mailto {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.mailto:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Responsive styles for smaller screens */
+
+@media (min-width: 1025px) {
+    main {
+        display: flex; /* Use Flexbox for layout */
+        justify-content: space-between; /* Space between the main content and the aside */
+        align-items: flex-start; /* Align items at the top */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: flex; /* Use Flexbox for layout */
+        justify-content: space-between; /* Space between the main content and the aside */
+        align-items: flex-start; /* Align items at the top */
+    }
+  }
+
+@media (max-width: 767px) {
+
+}

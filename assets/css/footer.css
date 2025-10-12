@@ -1,0 +1,77 @@
+/* Base styles for all pages */
+.footer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Add some padding */
+    background-color: #232323; /* Ensure the footer is white */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */
+    width: 100%; /* Ensure the footer takes full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.footer-text {
+    margin-top: 40px; /* Add spacing above the copyright text */
+    text-align: center; /* Center the text */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #666; /* Optional: Set a lighter color for the text */
+}
+
+.footer-content {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Distribute space between lists */
+    align-items: flex-start; /* Align all lists to the top */
+    gap: 100px; /* Add space between the lists */
+    width: 100%; /* Ensure it spans the full width */
+    flex-wrap: wrap; /* Optional: Wrap items if the screen is too small */
+}
+
+.white-text-footer {
+    color: #ffffff; /* Set text color to white */
+}
+
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #a7a7a7; /* Adjust color */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: rgba(143, 143, 143, 0.6); /* Slightly darker on hover */
+}
+
+.footer-links p {
+    margin: 0 0 10px; /* Add spacing below the heading */
+    font-weight: bold; /* Make the heading bold */
+}
+
+/* Responsive styles for smaller screens */
+
+@media (min-width: 1025px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (max-width: 767px) {
+    .footer-content {
+        display: flex; /* Align items in a row */
+        flex-direction: column; /* Ensure items are in a single row */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        gap: 30px; /* Add space between the items */
+        width: 100%; /* Ensure it spans the full width */
+        flex-wrap: nowrap; /* Prevent wrapping to the next line */
+        text-align: center; /* Center-align text inside items */
+    }
+}

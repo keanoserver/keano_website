@@ -34,7 +34,7 @@
                 &#9776;
             </button>
             <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Thuis</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link-active" href="Projects.html">Projecten</a></li>
                 <li><a class="nav-link" href="about-me.html">Over mij</a></li>
             </ul>
@@ -42,14 +42,84 @@
     </header>
 
     <main>
+        <section class="projects-overview">
+            <h2>Overzicht Projecten</h2>
+            <ol>
+                <li>Eigen VPN. Tijd besteed: 3 maanden</li>
+                <li>OpenVPN op Chromebook. Tijd besteed: 10 maanden</li>
+                <li>Eigen NAS. Tijd besteed: 1 maand</li>
+                <li>Eigen Dashboard. Tijd besteed: 2 weken</li>
+                <li>Een Reverse Proxy maken. Tijd besteed: 3 weken</li>
+                <li>Beginnen met Roblox Studio</li>
+                <li>Het eerste Roblox Tycoon maken. Tijd besteed: 1 maand</li>
+            </ol>
+        </section>
 
+        <section class="projects-details">
+            <h2>Projectdetails</h2>
+
+            <h3>Eigen VPN</h3>
+            <p>
+                Toen ik op mijn nieuwe school kwam, wilde ik een VPN omdat het school WiFi veel dingen blokkeerde, dus maakte ik mijn eerste VPN met WireGuard. 
+                WireGuard gebruikt echter het UDP-protocol, dat op ons schoolnetwerk geblokkeerd is, dus moest ik een andere manier vinden om toegang te krijgen tot een VPN. 
+                Ik installeerde PiVPN, waarmee ik OpenVPN kon configureren om TCP te gebruiken, wat niet geblokkeerd wordt. Nu heb ik een VPN voor mijn telefoon, zodat ik niet door de school geblokkeerd kan worden.
+            </p>
+
+            <h3>OpenVPN op Chromebook</h3>
+            <p>
+                Het klinkt eenvoudig om een VPN toe te voegen aan een Chromebook omdat je de OpenVPN-app kunt downloaden en de VPN kunt importeren. 
+                Maar het was niet zo eenvoudig omdat ik de VPN op mijn schoolaccount wilde hebben, en dat was het lastige, want ik kon de OpenVPN-app niet installeren. 
+                Dus moest ik de ingebouwde VPN van mijn Chromebook gebruiken. Ik importeerde het certificaat, en het werkte niet. 
+                Later probeerde ik een andere methode, en het werkte. Ik ga die nu niet uitleggen, omdat de school anders weet hoe ze het moeten blokkeren. 
+                Hier is de link naar de GitHub-pagina: <a href="https://github.com/keanoserver/openvpn-on-chromebook" target="_blank">OpenVPN op Chromebook</a>.
+            </p>
+
+            <h3>Eigen NAS</h3>
+            <p>
+                Wat is een NAS en wat doet het? Dat vroeg ik me af. Waarom heeft iemand een NAS nodig en waarom is het zo handig? 
+                Een NAS staat voor Network Attached Storage. Wat je met een NAS doet, hangt af van je behoeften. 
+                Je kunt bestanden opslaan, virtuele machines draaien, of zelfs Docker-containers uitvoeren. Ik gebruikte een NAS om bestanden op te slaan als backup voor mijn PC en telefoon. 
+                Aanvankelijk gebruikte ik TrueNAS Core, een gemakkelijk te gebruiken, lichtgewicht software. Later schakelde ik over naar TrueNAS Scale, een betere versie van TrueNAS Core. 
+                Het grootste verschil is dat TrueNAS Core draait op FreeBSD en TrueNAS Scale op Debian. Ik gebruikte een oude laptop voor beide versies. 
+                Beide zijn goede software voor beginners en makkelijk te gebruiken.
+            </p>
+
+            <h3>Eigen Dashboard</h3>
+            <p>
+                Een dashboard is een handig hulpmiddel om meerdere projecten en bronnen op één plek te beheren. 
+                Ik maakte mijn eigen dashboard om alles wat ik nodig heb voor mijn persoonlijke projecten te centraliseren. 
+                Dit maakte het beheren van mijn projecten en tools veel efficiënter en overzichtelijker.
+            </p>
+
+            <h3>Een Reverse Proxy maken</h3>
+            <p>
+                Een reverse proxy is niet hetzelfde als een VPN. Met een VPN zit je op het netwerk, maar met een proxy verbind je ermee zonder een IP van dat netwerk te krijgen. 
+                Een proxy is handig als mensen je apps willen gebruiken, maar je wilt ze niet op je netwerk hebben. 
+                Ik gebruik Cloudflare voor mijn proxy. Nu kunnen mensen verbinding maken met mijn netwerk zonder al mijn apparaten te zien. 
+                Voor een reverse proxy heb je een connector nodig. Ik installeerde de connector op mijn Raspberry Pi. 
+                Nu kunnen mensen mijn apps gebruiken zonder op mijn netwerk te zijn.
+            </p>
+
+            <h3>Beginnen met Roblox Studio</h3>
+            <p>
+                Ik begon in Roblox Studio met een vriend. We maakten ons eerste spel in een week. Dat was een obby met 40 levels. 
+                Daarna maakten we een karrenspel, wat echt leuk was om te maken. We hebben veel geleerd van deze twee spellen en besloten door te gaan met Roblox Studio.
+            </p>
+
+            <h3>Het eerste Roblox Tycoon maken</h3>
+            <p>
+                Na het maken van twee spellen besloten we een groter spel te maken, een tycoon game. Eerst dachten we dat het makkelijk zou zijn, maar al snel realiseerden we ons dat dat niet zo was. 
+                We begonnen met het bouwen van het hele tycoon, maar het moeilijkste deel kwam daarna: het programmeren. Het was echt uitdagend omdat het onze eerste keer was dat we met zo’n groot script werkten. 
+                Na een paar dagen begonnen de eerste functies te werken. Vanaf dat punt werd het veel gemakkelijker, en uiteindelijk hebben we het spel afgerond.
+            </p>
+        </section>
     </main>
 
     <footer class="footer">
-        <container class="footer-container">
+        <div class="footer-container">
             <div class="footer-content">
                 <ul class="footer-links">
-                    <p class="white-text-footer">Helpfull</p>
+                    <p class="white-text-footer">Handig</p>
                     <li><a href="index.html">Thuis</a></li>
                     <li><a href="Projects.html">Projecten</a></li>
                     <li><a href="about-me.html">Over mij</a></li>
@@ -59,16 +129,19 @@
                     <li><a href="https://github.com/keanoserver">Github</a></li>
                 </ul>
                 <ul class="footer-links">
-                    <p class="white-text-footer">Legal</p>
-                    <li><a href="Terms and Conditions.html">Terms of Service</a></li>
-                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
-                    <li><a href="License.html">License</a></li>
-                    <li><a href="Cookie Policy.html">Cookie Policy</a></li>
+                    <p class="white-text-footer">Juridisch</p>
+                    <li><a href="Terms and Conditions.html">Algemene Voorwaarden</a></li>
+                    <li><a href="Privacy Policy.html">Privacybeleid</a></li>
+                    <li><a href="License.html">Licentie</a></li>
+                    <li><a href="Cookie Policy.html">Cookiebeleid</a></li>
                 </ul>
             </div>
-        </container>
+        </div>
+        <div class="cookie-settings">
+            <button id="cookie-settings-btn" class="cookie-settings-btn">🍪 Cookie-instellingen</button>
+        </div>
         <div class="language-switcher">
-            <button class="language-dropdown-btn">🌐 Language</button>
+            <button class="language-dropdown-btn">🌐 Taal</button>
             <div class="language-dropdown-content">
                 <a href="/nl" onclick="document.cookie='language=nl;path=/;max-age=' + 60*60*24*365">🇳🇱 Nederlands</a>
                 <a href="/en" onclick="document.cookie='language=en;path=/;max-age=' + 60*60*24*365">🇺🇸 English</a>

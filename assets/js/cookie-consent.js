@@ -34,3 +34,11 @@ document.getElementById("reject-cookies").onclick = function() {
   localStorage.setItem("cookies-consent", "rejected");
   banner.style.display = "none";
 };
+
+
+const cookieSettingsBtn = document.getElementById('cookie-settings-btn');
+const cookieBanner = document.getElementById('cookie-banner');
+
+cookieSettingsBtn.addEventListener('click', () => {
+    cookieBanner.style.display = 'block';
+});

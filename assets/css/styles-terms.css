@@ -1,0 +1,74 @@
+/* Base Terms Page Styles */
+#content {
+    background-color: #404040;
+    padding: 80px 20px;
+    color: #fff;
+    min-height: 400px;
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+
+.terms-section {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+
+.terms-section h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.terms-section h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.terms-section p,
+.terms-section li {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.terms-section a {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.terms-section a:hover {
+    color: #0088cc;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .terms-section h1 {
+        font-size: 32px;
+    }
+    .terms-section h2 {
+        font-size: 22px;
+    }
+    .terms-section p,
+    .terms-section li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    #content {
+        padding: 60px 15px;
+    }
+    .terms-section h1 {
+        font-size: 28px;
+    }
+    .terms-section h2 {
+        font-size: 20px;
+    }
+    .terms-section p,
+    .terms-section li {
+        font-size: 14px;
+    }
+}
+    

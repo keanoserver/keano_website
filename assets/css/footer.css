@@ -115,6 +115,23 @@
     background-color: #f1f1f1;
 }
 
+.cookie-settings-btn {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-settings-btn:hover {
+    background: #666;
+}
+
+
 /* Responsive styles for smaller screens */
 
 @media (min-width: 1025px) {

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>License - keanoserver</title>
+    <title>Licentie - keanoserver</title>
     <link rel="icon" type="image/png" href="/assets/img/logo/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles-projects.css">
+    <link rel="stylesheet" href="/assets/css/styles-license.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     <script src="/assets/js/Button.js" defer></script>
     <script src="/assets/js/cookie-consent.js" defer></script>
 </head>
@@ -33,22 +34,46 @@
                 &#9776;
             </button>
             <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Thuis</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="Projects.html">Projecten</a></li>
                 <li><a class="nav-link" href="about-me.html">Over mij</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="content">
+        <section class="license-section">
+            <h1>Licentie</h1>
+            <p><em>Copyright © 2024-2025 Keanoserver. Alle rechten voorbehouden.</em></p>
 
+            <p>Deze website en de inhoud ervan, inclusief maar niet beperkt tot tekst, afbeeldingen, logo's en grafieken ("Inhoud"), zijn eigendom van Keanoserver of haar contentleveranciers en zijn beschermd door toepasselijke auteursrechten, handelsmerken en andere intellectuele eigendomswetten.</p>
+
+            <h2>1. Licentie en Gebruik</h2>
+            <p>U krijgt een beperkte, niet-exclusieve, niet-overdraagbare en herroepbare licentie om toegang te krijgen tot en gebruik te maken van de Inhoud van deze website uitsluitend voor persoonlijke, niet-commerciële doeleinden. Elk ander gebruik van de Inhoud, inclusief maar niet beperkt tot reproductie, distributie, vertoning of transmissie, is strikt verboden tenzij uitdrukkelijk toegestaan door Keanoserver.</p>
+
+            <h2>2. Beperkingen</h2>
+            <p>U mag de Inhoud niet wijzigen, kopiëren, reproduceren, opnieuw publiceren, uploaden, plaatsen, verzenden, verspreiden of op enige manier gebruiken zonder de voorafgaande schriftelijke toestemming van Keanoserver.</p>
+            <p>Het gebruik van de <strong>logo.png</strong> afbeelding is strikt beperkt tot de website en elk door Keanoserver toegestaan gebruik. U mag het logo niet gebruiken op een manier die een goedkeuring of samenwerking impliceert zonder expliciete toestemming.</p>
+
+            <h2>3. Beëindiging</h2>
+            <p>Keanoserver behoudt zich het recht voor om uw toegang tot de website en de Inhoud op elk moment en zonder voorafgaande kennisgeving te beëindigen, om welke reden dan ook.</p>
+
+            <h2>4. Vrijwaring</h2>
+            <p>De Inhoud van deze website is uitsluitend bedoeld voor informatiedoeleinden. Keanoserver doet geen enkele verklaring of garantie, expliciet of impliciet, over de volledigheid, nauwkeurigheid, betrouwbaarheid of geschiktheid van de Inhoud voor enig doel. Elk vertrouwen dat u op deze informatie stelt, is volledig op eigen risico.</p>
+
+            <h2>5. Toepasselijk recht</h2>
+            <p>Deze licentie wordt beheerst door en geïnterpreteerd in overeenstemming met de wetten van Nederland, zonder rekening te houden met eventuele conflicten met andere wetten.</p>
+
+            <h2>6. Contactinformatie</h2>
+            <p>Als u vragen heeft over deze licentie of toestemming wilt verkrijgen voor ander gebruik, ga dan naar de <a href="about-me.html">supportpagina</a>.</p>
+        </section>
     </main>
 
     <footer class="footer">
-        <container class="footer-container">
+        <div class="footer-container">
             <div class="footer-content">
                 <ul class="footer-links">
-                    <p class="white-text-footer">Helpfull</p>
+                    <p class="white-text-footer">Handig</p>
                     <li><a href="index.html">Thuis</a></li>
                     <li><a href="Projects.html">Projecten</a></li>
                     <li><a href="about-me.html">Over mij</a></li>
@@ -58,16 +83,19 @@
                     <li><a href="https://github.com/keanoserver">Github</a></li>
                 </ul>
                 <ul class="footer-links">
-                    <p class="white-text-footer">Legal</p>
-                    <li><a href="Terms and Conditions.html">Terms of Service</a></li>
-                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
-                    <li><a href="License.html">License</a></li>
-                    <li><a href="Cookie Policy.html">Cookie Policy</a></li>
+                    <p class="white-text-footer">Juridisch</p>
+                    <li><a href="Terms and Conditions.html">Algemene Voorwaarden</a></li>
+                    <li><a href="Privacy Policy.html">Privacybeleid</a></li>
+                    <li><a href="License.html">Licentie</a></li>
+                    <li><a href="Cookie Policy.html">Cookiebeleid</a></li>
                 </ul>
             </div>
-        </container>
+        </div>
+        <div class="cookie-settings">
+            <button id="cookie-settings-btn" class="cookie-settings-btn">🍪 Cookie-instellingen</button>
+        </div>
         <div class="language-switcher">
-            <button class="language-dropdown-btn">🌐 Language</button>
+            <button class="language-dropdown-btn">🌐 Taal</button>
             <div class="language-dropdown-content">
                 <a href="/nl" onclick="document.cookie='language=nl;path=/;max-age=' + 60*60*24*365">🇳🇱 Nederlands</a>
                 <a href="/en" onclick="document.cookie='language=en;path=/;max-age=' + 60*60*24*365">🇺🇸 English</a>

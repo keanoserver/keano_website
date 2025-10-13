@@ -17,7 +17,7 @@
 <body>
 
     <div id="cookie-banner" style="position:fixed;bottom:0;width:100%;background:#232323;color:white;padding:15px;text-align:center;z-index:9999;">
-        Wij gebruiken cookies om uw ervaring te verbeteren en verkeer te analyseren. 
+        We gebruiken cookies om uw ervaring te verbeteren en het verkeer te analyseren. 
         <button id="accept-cookies" style="margin-left:10px;">Accepteren</button>
         <button id="reject-cookies" style="margin-left:10px;">Afwijzen</button>
     </div>
@@ -34,7 +34,7 @@
                 &#9776;
             </button>
             <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Thuis</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="Projects.html">Projecten</a></li>
                 <li><a class="nav-link" href="about-me.html">Over mij</a></li>
             </ul>
@@ -53,10 +53,10 @@
     </main>
 
     <footer class="footer">
-        <container class="footer-container">
+        <div class="footer-container">
             <div class="footer-content">
                 <ul class="footer-links">
-                    <p class="white-text-footer">Helpfull</p>
+                    <p class="white-text-footer">Handig</p>
                     <li><a href="index.html">Thuis</a></li>
                     <li><a href="Projects.html">Projecten</a></li>
                     <li><a href="about-me.html">Over mij</a></li>
@@ -66,16 +66,19 @@
                     <li><a href="https://github.com/keanoserver">Github</a></li>
                 </ul>
                 <ul class="footer-links">
-                    <p class="white-text-footer">Legal</p>
-                    <li><a href="Terms and Conditions.html">Terms of Service</a></li>
-                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
-                    <li><a href="License.html">License</a></li>
-                    <li><a href="Cookie Policy.html">Cookie Policy</a></li>
+                    <p class="white-text-footer">Juridisch</p>
+                    <li><a href="Terms and Conditions.html">Algemene Voorwaarden</a></li>
+                    <li><a href="Privacy Policy.html">Privacybeleid</a></li>
+                    <li><a href="License.html">Licentie</a></li>
+                    <li><a href="Cookie Policy.html">Cookiebeleid</a></li>
                 </ul>
             </div>
-        </container>
+        </div>
+        <div class="cookie-settings">
+            <button id="cookie-settings-btn" class="cookie-settings-btn">🍪 Cookie-instellingen</button>
+        </div>
         <div class="language-switcher">
-            <button class="language-dropdown-btn">🌐 Language</button>
+            <button class="language-dropdown-btn">🌐 Taal</button>
             <div class="language-dropdown-content">
                 <a href="/nl" onclick="document.cookie='language=nl;path=/;max-age=' + 60*60*24*365">🇳🇱 Nederlands</a>
                 <a href="/en" onclick="document.cookie='language=en;path=/;max-age=' + 60*60*24*365">🇺🇸 English</a>

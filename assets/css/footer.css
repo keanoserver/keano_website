@@ -9,6 +9,8 @@
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */
     width: 100%; /* Ensure the footer takes full width */
     box-sizing: border-box; /* Include padding and border in the width */
+    position: relative; /* Allow positioning for language switcher */
+    margin-top: auto; /* Push footer to bottom when there's little content */
 }
 
 .footer-text {
@@ -53,6 +55,66 @@
     font-weight: bold; /* Make the heading bold */
 }
 
+/* Language Switcher Styles */
+.language-switcher {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-dropdown-btn {
+    background-color: #404040;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.language-dropdown-btn:hover {
+    background-color: #555;
+}
+
+.language-dropdown-content {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    background-color: white;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.language-switcher:hover .language-dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.language-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
 /* Responsive styles for smaller screens */
 
 @media (min-width: 1025px) {
@@ -73,5 +135,25 @@
         width: 100%; /* Ensure it spans the full width */
         flex-wrap: nowrap; /* Prevent wrapping to the next line */
         text-align: center; /* Center-align text inside items */
+    }
+
+    .language-switcher {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .language-dropdown-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .language-dropdown-content {
+        min-width: 120px;
+    }
+
+    .language-dropdown-content a {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }

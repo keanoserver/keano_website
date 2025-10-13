@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - keanoserver</title>
+    <link rel="icon" type="image/png" href="/assets/img/logo/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles-contact.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <script src="/assets/js/Button.js" defer></script>
+    <script src="/assets/js/cookie-consent.js" defer></script>
+</head>
+
+<body>
+
+    <div id="cookie-banner" style="position:fixed;bottom:0;width:100%;background:#232323;color:white;padding:15px;text-align:center;z-index:9999;">
+        We use cookies to improve your experience and analyze traffic. 
+        <button id="accept-cookies" style="margin-left:10px;">Accept</button>
+        <button id="reject-cookies" style="margin-left:10px;">Reject</button>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="home-link" aria-label="Home">
+                <img class="round-image" src="/assets/img/logo/logo.png" alt="Logo" width="50" height="50">
+            </a>
+            <a class="title" href="index.html">Keanoserver</a>
+        </div>
+        <nav class="nav-bar">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="Projects.html">Projects</a></li>
+                <li><a class="nav-link" href="about-me.html">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="content">
+            <div class="content-container">
+                <div class="content-box">
+                    <h1 class="content-titel">Contact</h1>
+                    <p class="content-text">This is the contact page. Feel free to reach out to us at: <a class="mailto" href="mailto:support@keanoserver.com">support@keanoserver.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <container class="footer-container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <p class="white-text-footer">Helpfull</p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="about-me.html">About me</a></li>
+                </ul>
+                <ul class="footer-links">
+                    <p class="white-text-footer">Social Media</p>
+                    <li><a href="https://github.com/keanoserver">Github</a></li>
+                </ul>
+                <ul class="footer-links">
+                    <p class="white-text-footer">Legal</p>
+                    <li><a href="Terms and Conditions.html">Terms of Service</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                    <li><a href="License.html">License</a></li>
+                    <li><a href="Cookie Policy.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </container>
+        <div class="language-switcher">
+            <button class="language-dropdown-btn">🌐 Language</button>
+            <div class="language-dropdown-content">
+                <a href="/nl" onclick="document.cookie='language=nl;path=/;max-age=' + 60*60*24*365">🇳🇱 Nederlands</a>
+                <a href="/en" onclick="document.cookie='language=en;path=/;max-age=' + 60*60*24*365">🇺🇸 English</a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2024-2025 keanoserver.com</p>
+    </footer>
+</body>
+</html>

@@ -124,7 +124,7 @@
         align-items: center; /* Center align the links */
         justify-content: center; /* Center align the links */
         gap: 5px; /* Reduce the gap between the links */
-        min-width: 150px; /* Set a minimum width for the dropdown */
+        min-width: 140px; /* Set a minimum width for the dropdown */
         max-width: 90%; /* Set a maximum width relative to the viewport */
         background-color: #fff; /* Optional: Background color for dropdown */
         padding: 10px;
@@ -133,7 +133,7 @@
         right: 0; /* Align it to the right edge of the nav-bar */
         border: 1px solid #ddd; /* Optional: Add a border for clarity */
         z-index: 1000; /* Ensure it appears above other elements */
-        overflow-wrap: break-word; /* Ensure long text wraps to the next line */
+        white-space: nowrap; /* Prevent text wrapping in nav links */
         box-sizing: border-box; /* Include padding and border in the width */
         border-radius: 15px; /* Optional: Rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */
@@ -178,7 +178,7 @@
         align-items: center; /* Center align the links */
         justify-content: center; /* Center align the links */
         gap: 5px; /* Reduce the gap between the links */
-        min-width: 100px; /* Set a minimum width for the dropdown */
+        min-width: 140px; /* Set a minimum width for the dropdown */
         max-width: 90%; /* Set a maximum width relative to the viewport */
         background-color: #fff; /* Optional: Background color for dropdown */
         padding: 10px;
@@ -187,7 +187,7 @@
         right: 0; /* Align it to the right edge of the nav-bar */
         border: 1px solid #ddd; /* Optional: Add a border for clarity */
         z-index: 1000; /* Ensure it appears above other elements */
-        overflow-wrap: break-word; /* Ensure long text wraps to the next line */
+        white-space: nowrap; /* Prevent text wrapping in nav links */
         box-sizing: border-box; /* Include padding and border in the width */
         border-radius: 15px; /* Optional: Rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */

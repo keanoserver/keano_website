@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - keanoserver</title>
+    <link rel="icon" type="image/png" href="/assets/img/logo/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles-projects.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <script src="/assets/js/Button.js" defer></script>
+    <script src="/assets/js/cookie-consent.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLBZSCC0QJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GLBZSCC0QJ');
+    </script>
+</head>
+
+<body>
+
+    <div id="cookie-banner" style="position:fixed;bottom:0;width:100%;background:#232323;color:white;padding:15px;text-align:center;z-index:9999;">
+        We use cookies to improve your experience and analyze traffic. 
+        <button id="accept-cookies" style="margin-left:10px;">Accept</button>
+        <button id="reject-cookies" style="margin-left:10px;">Reject</button>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="home-link" aria-label="Home">
+                <img class="round-image" src="/assets/img/logo/logo.png" alt="Logo" width="50" height="50">
+            </a>
+            <a class="title" href="index.html">Keanoserver</a>
+        </div>
+        <nav class="nav-bar">
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link-active" href="Projects.html">Projects</a></li>
+                <li><a class="nav-link" href="about-me.html">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-overview">
+            <h2>Projects Overview</h2>
+            <ol>
+                <li>Own VPN. Time taken: 3 months</li>
+                <li>OpenVPN on Chromebook. Time taken: 10 months</li>
+                <li>Own NAS. Time taken: 1 month</li>
+                <li>Own Dashboard. Time taken: 2 weeks</li>
+                <li>Making a Reverse Proxy. Time taken: 3 weeks</li>
+                <li>Beginning in Roblox Studio</li>
+                <li>Making the First Roblox Tycoon. Time taken: 1 month</li>
+            </ol>
+        </section>
+
+        <section class="projects-details">
+            <h2>Project Details</h2>
+
+            <h3>Own VPN</h3>
+            <p>
+                When I was at my new school, I wanted a VPN because the school WiFi blocked many things, so I made my first VPN with WireGuard. 
+                However, WireGuard uses the UDP protocol, which is blocked on our school network, so I needed to find another way to access a VPN. 
+                I installed PiVPN, where I could configure OpenVPN to use TCP, which is not blocked. Now I have a VPN for my phone, so I cannot be blocked by my school.
+            </p>
+
+            <h3>OpenVPN on Chromebook</h3>
+            <p>
+                It sounds simple to add a VPN to a Chromebook because you can download the OpenVPN app and import the VPN. 
+                But it was not that simple because I wanted the VPN on my school account, and that was the difficult part because I couldn't install the OpenVPN app. 
+                So I needed to use the built-in VPN on my Chromebook. I imported the certificate, and it didn't work. 
+                Later, I tried another method, and it worked. But I'm not going to tell that now because then my school will know how to block it. 
+                Here is the link to the GitHub page: <a href="https://github.com/keanoserver/openvpn-on-chromebook" target="_blank">OpenVPN on Chromebook</a>.
+            </p>
+
+            <h3>Own NAS</h3>
+            <p>
+                What is a NAS, and what does it do? That’s what I wondered. Why do people need a NAS, and why is it so useful? 
+                A NAS stands for Network Attached Storage. What you do with a NAS depends on your needs. 
+                You can store files, run virtual machines, or even run Docker containers. I used a NAS for saving files to have a backup for my PC and phone. 
+                I initially used TrueNAS Core, an easy-to-run, lightweight software. Later, I switched to TrueNAS Scale, a better version of TrueNAS Core. 
+                The main difference is that TrueNAS Core runs on FreeBSD and TrueNAS Scale on Debian. I used an old laptop for both versions. 
+                Both are good software for beginners and easy to use.
+            </p>
+
+            <h3>Own Dashboard</h3>
+            <p>
+                A dashboard is a useful tool for managing multiple projects and resources in one place. 
+                I created my own dashboard to centralize everything I need for my personal projects. 
+                This made managing my projects and tools much more efficient and streamlined.
+            </p>
+
+            <h3>Making a Reverse Proxy</h3>
+            <p>
+                A reverse proxy is not the same as a VPN. With a VPN, you are on the network, but with a proxy, you connect to it without getting an IP from it. 
+                A proxy is useful when people want to use your apps, but you don’t want them on your network. 
+                I use Cloudflare for my proxy. Now people can connect to my network without seeing all my devices. 
+                For a reverse proxy, you need a connector. I installed the connector on my Raspberry Pi. 
+                Now people can access my apps without being on my network.
+            </p>
+
+            <h3>Beginning in Roblox Studio</h3>
+            <p>
+                I started in Roblox Studio with a friend. We made our first game in a week. That was an obby with 40 levels. 
+                After that, we created a cart ride, which was really fun to make. We learned a lot from those two games and decided to continue working in Roblox Studio.
+            </p>
+
+            <h3>Making the First Roblox Tycoon</h3>
+            <p>
+                After creating two games in Roblox, we decided to make a bigger one, a tycoon game. At first, we thought it would be easy, but we soon realized it wasn’t that simple. 
+                We started by building the entire tycoon, but the hardest part came next: the scripting. It was really challenging because it was our first time working with such a large script. 
+                However, after a few days, the first features started working. From there, it became much easier, and we eventually finished the game.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <p class="white-text-footer">Helpfull</p>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="about-me.html">About me</a></li>
+                </ul>
+                <ul class="footer-links">
+                    <p class="white-text-footer">Social Media</p>
+                    <li><a href="https://github.com/keanoserver">Github</a></li>
+                </ul>
+                <ul class="footer-links">
+                    <p class="white-text-footer">Legal</p>
+                    <li><a href="Terms and Conditions.html">Terms of Service</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                    <li><a href="License.html">License</a></li>
+                    <li><a href="Cookie Policy.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cookie-settings">
+            <button id="cookie-settings-btn" class="cookie-settings-btn">🍪 Cookie-settings</button>
+        </div>
+        <div class="language-switcher">
+            <button class="language-dropdown-btn">🌐 Language</button>
+            <div class="language-dropdown-content">
+                <a href="/nl" onclick="document.cookie='language=nl;path=/;max-age=' + 60*60*24*365">🇳🇱 Nederlands</a>
+                <a href="/en" onclick="document.cookie='language=en;path=/;max-age=' + 60*60*24*365">🇺🇸 English</a>
+            </div>
+        </div>
+        <p class="footer-text">&copy; 2024-2025 keanoserver.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* Base styles for all pages */
+
+.header {
+    position: fixed; /* Fix the header to the top of the viewport */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left of the page */
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000; /* Ensure it appears above other elements */
+    background-color: #efefef; /* Keep the background color */
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between logo/title and nav-bar */
+    padding: 10px; /* Optional: Add some padding */
+    border-bottom: 1px solid #ddd; /* Add a subtle border at the bottom */
+    box-shadow: 0 2px 4px rgba(55, 55, 55, 0.1); /* Optional: Add a light shadow */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Vertically align logo and title */
+    gap: 10px; /* Space between the logo image and title */
+}
+
+.title {
+    text-decoration: none; /* Remove underline from the title */
+    font-size: 24px; /* Adjust as needed */
+    font-weight: 500; /* Adjust as needed */
+    font-family: sans-serif; /* Adjust as needed */
+    color: #000; /* Adjust color */
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex; /* Default: horizontal layout */
+    gap: 20px;
+}
+
+.menu-toggle {
+    display: none; /* Hide the toggle button by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #000; /* Adjust color */
+    font-size: 20px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-bar a:hover {
+    color: rgba(0, 0, 0, 0.6); /* Slightly darker on hover */
+}
+
+.nav-link-active {
+    color: rgba(0, 0, 0, 0); /* Active link is fully black */
+    font-weight: bold; /* Optional: Make active link bold */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.round-image {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image scales properly */
+    border: 2px solid #ddd; /* Optional: Add a border */
+}
+
+/* Responsive styles for the header */
+
+@media (min-width: 1025px) {
+    .nav-bar ul {
+        list-style: none; /* Remove bullet points from the list */
+        display: flex; /* Ensure the list items are in a row */
+        gap: 30px; /* Space between list items */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+
+    .nav-bar {
+        padding: 20px; /* Add some padding to the nav-bar */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        position: relative; /* Ensure the dropdown is positioned relative to the nav-bar */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+    }
+
+    @keyframes dropdown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-links {
+        list-style: none; /* Remove bullet points from the list */
+        visibility: hidden; /* Hide the links but keep them in the layout */
+        opacity: 0; /* Start fully transparent */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the links */
+        justify-content: center; /* Center align the links */
+        gap: 5px; /* Reduce the gap between the links */
+        min-width: 140px; /* Set a minimum width for the dropdown */
+        max-width: 90%; /* Set a maximum width relative to the viewport */
+        background-color: #fff; /* Optional: Background color for dropdown */
+        padding: 10px;
+        position: absolute; /* Position the dropdown relative to the nav-bar */
+        top: 100%; /* Place it directly below the nav-bar */
+        right: 0; /* Align it to the right edge of the nav-bar */
+        border: 1px solid #ddd; /* Optional: Add a border for clarity */
+        z-index: 1000; /* Ensure it appears above other elements */
+        white-space: nowrap; /* Prevent text wrapping in nav links */
+        box-sizing: border-box; /* Include padding and border in the width */
+        border-radius: 15px; /* Optional: Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */
+        transform: translateY(-10px); /* Start slightly above */
+        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease; /* Smooth animation */
+    }
+    
+    .nav-links.active {
+        visibility: visible; /* Make the links visible */
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to its original position */
+    }
+  }
+
+@media (max-width: 767px) {
+    .nav-bar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        position: relative; /* Ensure the dropdown is positioned relative to the nav-bar */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button */
+    }
+
+    @keyframes dropdown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-links {
+        list-style: none; /* Remove bullet points from the list */
+        visibility: hidden; /* Hide the links but keep them in the layout */
+        opacity: 0; /* Start fully transparent */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the links */
+        justify-content: center; /* Center align the links */
+        gap: 5px; /* Reduce the gap between the links */
+        min-width: 140px; /* Set a minimum width for the dropdown */
+        max-width: 90%; /* Set a maximum width relative to the viewport */
+        background-color: #fff; /* Optional: Background color for dropdown */
+        padding: 10px;
+        position: absolute; /* Position the dropdown relative to the nav-bar */
+        top: 100%; /* Place it directly below the nav-bar */
+        right: 0; /* Align it to the right edge of the nav-bar */
+        border: 1px solid #ddd; /* Optional: Add a border for clarity */
+        z-index: 1000; /* Ensure it appears above other elements */
+        white-space: nowrap; /* Prevent text wrapping in nav links */
+        box-sizing: border-box; /* Include padding and border in the width */
+        border-radius: 15px; /* Optional: Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */
+        transform: translateY(-10px); /* Start slightly above */
+        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease; /* Smooth animation */
+    }
+    
+    .nav-links.active {
+        visibility: visible; /* Make the links visible */
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to its original position */
+    }
+}

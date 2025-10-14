@@ -1,0 +1,140 @@
+/* Base styles for all pages */
+#content {
+    background-color: #404040; /* Replace with your desired color */
+    padding: 40px;
+    color: #fff;
+    min-height: 400px;
+    margin-top: 120px;
+    box-sizing: border-box;
+}
+
+/* Projects Overview */
+.projects-overview {
+    padding: 160px 20px 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects-overview h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-overview ol {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Projects Details */
+.projects-details {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects-details h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-details h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.projects-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.projects-details a {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.projects-details a:hover {
+    color: #0088cc;
+}
+
+/* ===== Large screens (Desktops) ===== */
+@media (min-width: 1025px) {
+    .projects-overview {
+        padding: 160px 60px 40px;
+    }
+    .projects-overview ol {
+        font-size: 18px;
+    }
+    .projects-details {
+        padding: 100px 60px;
+    }
+    .projects-details h2 {
+        font-size: 36px;
+    }
+    .projects-details h3 {
+        font-size: 24px;
+    }
+    .projects-details p {
+        font-size: 18px;
+    }
+}
+
+/* ===== Medium screens (Tablets) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .projects-overview {
+        padding: 140px 40px 30px;
+    }
+    .projects-overview h2 {
+        font-size: 28px;
+    }
+    .projects-overview ol {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    .projects-details {
+        padding: 60px 40px;
+    }
+    .projects-details h2 {
+        font-size: 28px;
+    }
+    .projects-details h3 {
+        font-size: 20px;
+    }
+    .projects-details p {
+        font-size: 15px;
+    }
+}
+
+/* ===== Small screens (Phones) ===== */
+@media (max-width: 767px) {
+    .projects-overview {
+        padding: 120px 20px 20px;
+    }
+    .projects-overview h2 {
+        font-size: 24px;
+    }
+    .projects-overview ol {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .projects-details {
+        padding: 40px 20px;
+    }
+    .projects-details h2 {
+        font-size: 24px;
+    }
+    .projects-details h3 {
+        font-size: 18px;
+    }
+    .projects-details p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
